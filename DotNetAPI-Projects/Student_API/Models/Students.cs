@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
+using Student_API.CustomAttributes;
 
 namespace Student_API.Models
 {
@@ -16,6 +17,7 @@ namespace Student_API.Models
 
         [Required]
         [DataType(DataType.Date)]
+        [SchoolAge(5,22)]
         public DateTime BirthDate { get; set; }
 
         [Required]
